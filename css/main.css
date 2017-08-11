@@ -95,14 +95,20 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+    text-align: center;
+}
+
 header {
     text-align: center;
-    width: 40em;
-    border-radius: 50%;
+    width: 450px;
+    height: 450px;
     background: white;
+    border-radius: 50%;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    margin: -225px 0 0 -225px;
 }
 
 .header-logo {
@@ -111,13 +117,18 @@ header {
 }
 
 #particles-js{
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  background-image: url('');
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.has-top-padding {
+    padding-top: 1.5em;
 }
 
 /* ==========================================================================
