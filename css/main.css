@@ -95,31 +95,75 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body, button, input, select, textarea {
+    font-size: 1.25rem;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 body {
-    text-align: center;
+  color: black;
 }
 
 header {
     text-align: center;
     width: 450px;
-    height: 450px;
+    height: 400px;
     background: white;
-    border-radius: 50%;
     position: absolute;
     left: 50%;
-    top: 50%;
-    margin: -225px 0 0 -225px;
+    margin: 25px 0 0 -225px;
 }
 
+@media only screen and (max-width: 450px) {
+    header {
+    position: static;
+    left: auto;
+    width: auto;
+    height: auto;
+    margin: 25px 0 0 0;
+}
+}
+
+.title.is-3 { 
+ font-weight: bold; }
+
+
+.ssubtitle {
+    font-size: 1.5rem;
+}
 .header-logo {
     width: 12em;
     height: 12em;
 }
 
+.button.is-primary {
+  background-color: rgb(221, 3, 48);
+}
+
+.button.is-primary:hover, .button.is-primary.is-hovered {
+  background-color: rgb(195,13, 46);
+}
+
+
+.custom-container {
+  margin: 100px auto;
+  position: relative;
+  max-width: 700px;
+  padding-bottom: 100px;
+}
+
+
+@media screen and (max-width: 699px) {
+  .custom-container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
 #particles-js{
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 380px;
     background-color: #ffffff;
     background-image: url('');
     background-size: cover;
@@ -129,6 +173,11 @@ header {
 
 .has-top-padding {
     padding-top: 1.5em;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
 }
 
 /* ==========================================================================
