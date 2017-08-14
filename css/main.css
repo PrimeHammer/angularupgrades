@@ -114,16 +114,6 @@ header {
     margin: 25px 0 0 -225px;
 }
 
-@media only screen and (max-width: 450px) {
-    header {
-    position: static;
-    left: auto;
-    width: auto;
-    height: auto;
-    margin: 25px 0 0 0;
-}
-}
-
 .title.is-3 { 
  font-weight: bold; }
 
@@ -182,6 +172,39 @@ a {
 
 a.button.is-primary {
     text-decoration: none;
+}
+
+@media only screen and (max-width: 450px) {
+    header {
+        position: static;
+        left: auto;
+        width: auto;
+        height: auto;
+        margin: 25px 0 0 0;
+    }
+
+    .header-logo {
+        width: 8em;
+        height: 8em;
+    }
+
+    .title.is-1 {
+        font-size: 1.5em;
+    }
+
+    #particles-js {
+        height: auto;
+    }
+
+    .ssubtitle {
+        font-size: 1.25em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .custom-container {
+        margin: 0;
+    }
 }
 
 /* ==========================================================================
