@@ -248,9 +248,17 @@ a.button.is-primary {
     padding-bottom:80px;
 }
 
+.space-medium {
+    padding-top:40px;
+}
+
+.space-medium.space-both {
+    padding-bottom:40px;
+}
+
 /* text */
 .font-thin {
-    font-weight: 100;
+    font-weight: 100 !important;
 }
 
 .text-center {
@@ -259,6 +267,10 @@ a.button.is-primary {
 
 .text-left {
     text-align: left;
+}
+
+.text-right {
+    text-align: right;
 }
 
 /*
