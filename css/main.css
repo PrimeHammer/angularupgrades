@@ -206,9 +206,16 @@ a.button.is-primary {
 
 /* Introduction section */
 .upgrade-button {
-    padding:20px;
+    padding:40px;
     margin:0;
     border:0;
+    min-width:450px;
+    max-width: 100%;
+    background-color: #6483c1;
+}
+
+.upgrade-button:hover {
+    background-color: #546fa3;  
 }
 
 .introduction-section .title, .introduction-section .ssubtitle {
@@ -274,6 +281,10 @@ a.button.is-primary {
 /* text */
 .font-thin {
     font-weight: 100 !important;
+}
+
+.font-medium {
+    font-weight: 300;
 }
 
 .text-center {
