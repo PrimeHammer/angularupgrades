@@ -284,7 +284,7 @@ a.button.is-primary {
 }
 
 .font-medium {
-    font-weight: 300;
+    font-weight: 500 !important;
 }
 
 .text-center {
