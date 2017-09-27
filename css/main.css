@@ -127,11 +127,11 @@ header {
 }
 
 .button.is-primary {
-  background-color: rgb(221, 3, 48);
+  background-color: #6483c1;
 }
 
 .button.is-primary:hover, .button.is-primary.is-hovered {
-  background-color: rgb(195,13, 46);
+  background-color: #546fa3;
 }
 
 
@@ -230,12 +230,21 @@ a.button.is-primary {
     padding-left:3em;
 }
 
+/* Process section */
+.process-section ol{
+    padding-left:3em;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
 /* custom colors */
 .bg-blue {
     background:#6483c1;
+}
+
+.color-blue {
+    color:#6483c1;
 }
 
 .bg-gray {
@@ -277,6 +286,17 @@ a.button.is-primary {
 
 .text-right {
     text-align: right;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+/* borders */
+
+.no-borders {
+    border:0;
+    border-radius: 0;
 }
 
 /*
