@@ -101,7 +101,7 @@ body, button, input, select, textarea {
 }
 
 body {
-  color: black;
+  color: #5c6773;
 }
 
 header {
@@ -136,10 +136,7 @@ header {
 
 
 .custom-container {
-  margin: 100px auto;
-  position: relative;
   max-width: 700px;
-  padding-bottom: 100px;
 }
 
 
@@ -207,9 +204,49 @@ a.button.is-primary {
     }
 }
 
+.upgrade-button {
+    padding:20px;
+    margin:0;
+    border:0;
+}
+
+.introduction-section .title, .introduction-section .ssubtitle {
+    text-transform: uppercase;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+/* custom colors */
+.bg-blue {
+    background:#6483c1;
+}
+
+.color-light {
+    color:white;
+}
+
+/* spacing */
+.space-80 {
+    padding-top:80px;
+}
+.space-both.space-80{
+    padding-bottom:80px;
+}
+
+/* text */
+.font-thin {
+    font-weight: 100;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
 
 /*
  * Hide visually and from screen readers
