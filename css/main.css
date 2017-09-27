@@ -204,6 +204,7 @@ a.button.is-primary {
     }
 }
 
+/* Introduction section */
 .upgrade-button {
     padding:20px;
     margin:0;
@@ -214,6 +215,14 @@ a.button.is-primary {
     text-transform: uppercase;
 }
 
+/* Team section */
+.team-members {
+    padding-top:40px;
+}
+
+.team-members .person{
+    padding:10px;
+}
 
 /* ==========================================================================
    Helper classes
@@ -221,6 +230,10 @@ a.button.is-primary {
 /* custom colors */
 .bg-blue {
     background:#6483c1;
+}
+
+.bg-gray {
+    background:#eee;
 }
 
 .color-light {
