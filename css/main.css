@@ -224,6 +224,12 @@ a.button.is-primary {
     padding:10px;
 }
 
+/* AngularJS to Angular section */
+.angularjs-angular-section ul {
+    list-style-type: disc;
+    padding-left:3em;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
