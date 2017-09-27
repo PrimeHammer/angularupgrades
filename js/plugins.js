@@ -22,6 +22,7 @@
 }());
 
 width = document.body.clientWidth;
+/*
 if (width>750) {
 
 particlesJS('particles-js',
@@ -143,4 +144,4 @@ particlesJS('particles-js',
   }
 );
 
-}
+}*/
