@@ -274,12 +274,9 @@ a.button.is-primary {
     background-size: 30%;
 }
 
-.introduction-section .logo {
-    height: 100px;
-}
-
+.introduction-section .logo,
 .introduction-section .angular {
-    height: 160px;
+    width: 100px;
 }
 
 .upgrade-button {
