@@ -348,6 +348,10 @@ a.button.is-primary {
 
 /* Who are we section */
 
+.developers-description {
+    padding-right: 80px;
+}
+
 .logo-wrapper-2 {
     text-align: center;
     display: none;
@@ -365,7 +369,8 @@ a.button.is-primary {
 
 @media only screen and (max-width: 769px) {
     /* bulma tablet breakpoint */
-    .we-section .picture-wrapper {
+    .we-section .picture-wrapper,
+    .developers-description {
         padding: 0 !important;
     }
 }
