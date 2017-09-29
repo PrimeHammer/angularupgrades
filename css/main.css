@@ -126,6 +126,12 @@ textarea {
     font-family: 'Muli', 'Source Sans Pro', sans-serif;
 }
 
+@media only screen and (max-width:769px) {
+    body {
+        font-size: 1.1rem;
+    }
+}
+
 body {
     color: #5c6773;
     background: url('../img/fill-background.png');
@@ -311,7 +317,7 @@ a.button.is-primary {
     margin-right: 30px;
 }
 
-@media screen and (max-width: 724px) {
+@media screen and (max-width: 769px) {
     .team-members .avatar {
         width: 95px;
         margin-right: 10px;
