@@ -325,7 +325,8 @@ a.button.is-primary {
     display: none;
 }
 
-@media only screen and (max-width: 1260px) {/* old bulma breakpoint */
+@media only screen and (max-width: 1260px) {
+    /* old bulma breakpoint */
     .logo-wrapper-2 {
         display: block;
     }
@@ -334,7 +335,8 @@ a.button.is-primary {
     }
 }
 
-@media only screen and (max-width: 769px) {/* bulma tablet breakpoint */
+@media only screen and (max-width: 769px) {
+    /* bulma tablet breakpoint */
     .we-section .picture-wrapper {
         padding: 0 !important;
     }
@@ -357,7 +359,8 @@ a.button.is-primary {
 }
 
 .bg-gray {
-    background: rgba(100, 131, 193, 0.06); /* #6483c1 */
+    background: rgba(100, 131, 193, 0.06);
+    /* #6483c1 */
 }
 
 .color-dark {
@@ -439,6 +442,18 @@ a.button.is-primary {
 
 .text-uppercase {
     text-transform: uppercase;
+}
+
+.lt-big {
+    letter-spacing: 3px;
+}
+
+.lt-medium {
+    letter-spacing: 2.35px;
+}
+
+.lt-small {
+    letter-spacing: 0.35px;
 }
 
 
