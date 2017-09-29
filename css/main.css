@@ -240,7 +240,7 @@ a.button.is-primary {
     padding: 40px;
     margin: 0;
     border: 0;
-    min-width: 450px;
+    width: 450px;
     max-width: 100%;
     background-color: #6483c1;
 }
