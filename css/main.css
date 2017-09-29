@@ -212,7 +212,25 @@ a.button.is-primary {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width:769px) {
+    .title.is-1 {
+        font-size: 2em;
+    }
+    .ssubtitle {
+        font-size: 1.1em;
+    }
+    .title.is-2 {
+        font-size: 1.5em;
+    }
+    .title.is-3 {
+        font-size: 1.3em;
+    }
+    .title.is-4 {
+        font-size: 1.05em;
+    }
+}
+
+@media only screen and (max-width: 630px) {
     header {
         position: static;
         left: auto;
@@ -231,7 +249,7 @@ a.button.is-primary {
         height: auto;
     }
     .ssubtitle {
-        font-size: 1.25em;
+        font-size: 1.1em;
         margin-left: 1em;
         margin-right: 1em;
     }
@@ -269,6 +287,12 @@ a.button.is-primary {
 
 .upgrade-button:hover {
     background-color: #546fa3;
+}
+
+@media only screen and (max-width:769px) {
+    .upgrade-button {
+        padding: 20px;
+    }
 }
 
 
@@ -386,16 +410,6 @@ a.button.is-primary {
     padding-bottom: 80px;
 }
 
-@media only screen and (max-width: 1008px) {
-    /* bulma desktop breakpoint */
-    .space-big {
-        padding-top: 60px;
-    }
-    .space-big.space-both {
-        padding-bottom: 60px;
-    }
-}
-
 .space-medium {
     padding-top: 40px;
 }
@@ -406,6 +420,22 @@ a.button.is-primary {
 
 .space-small {
     padding-top: 10px;
+}
+
+@media only screen and (max-width: 1008px) {
+    /* bulma desktop breakpoint */
+    .space-big {
+        padding-top: 60px;
+    }
+    .space-big.space-both {
+        padding-bottom: 60px;
+    }
+    .space-medium {
+        padding-top: 30px;
+    }
+    .space-medium.space-both {
+        padding-bottom: 30px;
+    }
 }
 
 .no-space {
