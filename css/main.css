@@ -231,6 +231,14 @@ a.button.is-primary {
     padding:10px;
 }
 
+.team-members .avatar {
+    width:150px;
+}
+
+.team-members .avatar img {
+    margin:0 auto;
+}
+
 /* AngularJS to Angular section */
 .angularjs-angular-section ul {
     list-style-type: disc;
