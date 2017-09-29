@@ -249,7 +249,7 @@ a.button.is-primary {
         height: auto;
     }
     .ssubtitle {
-        font-size: 1.1em;
+        font-size: 1em;
         margin-left: 1em;
         margin-right: 1em;
     }
@@ -447,6 +447,16 @@ a.button.is-primary {
     margin: 0 !important;
 }
 
+.mobile-only {
+    display: none;
+}
+
+@media only screen and (max-width:769px) {
+    .mobile-only {
+        display: initial;
+    }
+}
+
 
 /* text */
 
@@ -484,6 +494,12 @@ a.button.is-primary {
 
 .lt-small {
     letter-spacing: 0.35px;
+}
+
+@media only screen and (max-width:769px) {
+    .lt-big {
+        letter-spacing: 1.5px;
+    }
 }
 
 .font-small {
