@@ -249,11 +249,6 @@ a.button.is-primary {
     background-color: #546fa3;
 }
 
-.introduction-section .title,
-.introduction-section .ssubtitle {
-    text-transform: uppercase;
-}
-
 
 /* Team section */
 
@@ -272,6 +267,10 @@ a.button.is-primary {
 
 .team-members .avatar img {
     margin: 0 auto;
+}
+
+.team-members .person .name {
+    text-transform: uppercase;
 }
 
 
