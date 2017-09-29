@@ -128,6 +128,10 @@ textarea {
 
 body {
     color: #5c6773;
+    background: url('../img/fill-background.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position-y: 300px;
 }
 
 header {
@@ -239,6 +243,13 @@ a.button.is-primary {
 
 /* Introduction section */
 
+#introduction {
+    background: url('../img/fill-top.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 30%;
+}
+
 .introduction-section .logo {
     height: 101px;
 }
@@ -323,7 +334,7 @@ a.button.is-primary {
 }
 
 .bg-gray {
-    background: #fafbfc;
+    background: rgba(0, 0, 0, 0.02);
 }
 
 .color-dark {
@@ -349,7 +360,8 @@ a.button.is-primary {
     padding-bottom: 80px;
 }
 
-@media only screen and (max-width: 1008px) { /* bulma desktop breakpoint */
+@media only screen and (max-width: 1008px) {
+    /* bulma desktop breakpoint */
     .space-big {
         padding-top: 60px;
     }
