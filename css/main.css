@@ -1,10 +1,12 @@
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
+
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -15,6 +17,7 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -34,6 +37,7 @@ html {
     text-shadow: none;
 }
 
+
 /*
  * A better looking default horizontal rule
  */
@@ -46,6 +50,7 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
+
 
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -62,6 +67,7 @@ video {
     vertical-align: middle;
 }
 
+
 /*
  * Remove default fieldset styles.
  */
@@ -72,6 +78,7 @@ fieldset {
     padding: 0;
 }
 
+
 /*
  * Allow only vertical resizing of textareas.
  */
@@ -79,6 +86,7 @@ fieldset {
 textarea {
     resize: vertical;
 }
+
 
 /* ==========================================================================
    Browser Upgrade Prompt
@@ -91,17 +99,22 @@ textarea {
     padding: 0.2em 0;
 }
 
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
-body, button, input, select, textarea {
+body,
+button,
+input,
+select,
+textarea {
     font-size: 1.25rem;
-  font-family: 'Muli','Source Sans Pro', sans-serif;
+    font-family: 'Muli', 'Source Sans Pro', sans-serif;
 }
 
 body {
-  color: #5c6773;
+    color: #5c6773;
 }
 
 header {
@@ -114,40 +127,40 @@ header {
     margin: 25px 0 0 -225px;
 }
 
-.title.is-3 { 
- font-weight: bold; }
-
+.title.is-3 {
+    font-weight: bold;
+}
 
 .ssubtitle {
     font-size: 1.5rem;
 }
+
 .header-logo {
     width: 12em;
     height: 12em;
 }
 
 .button.is-primary {
-  background-color: #6483c1;
+    background-color: #6483c1;
 }
 
-.button.is-primary:hover, .button.is-primary.is-hovered {
-  background-color: #546fa3;
+.button.is-primary:hover,
+.button.is-primary.is-hovered {
+    background-color: #546fa3;
 }
-
 
 .custom-container {
-  max-width: 700px;
+    max-width: 700px;
 }
-
 
 @media screen and (max-width: 699px) {
-  .custom-container {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
+    .custom-container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
 }
 
-#particles-js{
+#particles-js {
     position: relative;
     width: 100%;
     height: 380px;
@@ -179,114 +192,127 @@ a.button.is-primary {
         height: auto;
         margin: 25px 0 0 0;
     }
-
     .header-logo {
         width: 8em;
         height: 8em;
     }
-
     .title.is-1 {
         font-size: 1.5em;
     }
-
     #particles-js {
         height: auto;
     }
-
     .ssubtitle {
         font-size: 1.25em;
         margin-left: 1em;
         margin-right: 1em;
     }
-
     .custom-container {
         margin: 0;
     }
 }
 
+
 /* Introduction section */
+
 .upgrade-button {
-    padding:40px;
-    margin:0;
-    border:0;
-    min-width:450px;
+    padding: 40px;
+    margin: 0;
+    border: 0;
+    min-width: 450px;
     max-width: 100%;
     background-color: #6483c1;
 }
 
 .upgrade-button:hover {
-    background-color: #546fa3;  
+    background-color: #546fa3;
 }
 
-.introduction-section .title, .introduction-section .ssubtitle {
+.introduction-section .title,
+.introduction-section .ssubtitle {
     text-transform: uppercase;
 }
 
+
 /* Team section */
+
 .team-members {
-    padding-top:40px;
+    padding-top: 40px;
 }
 
-.team-members .person{
-    padding:10px;
+.team-members .person {
+    padding: 10px;
 }
 
 .team-members .avatar {
-    width:150px;
+    width: 150px;
 }
 
 .team-members .avatar img {
-    margin:0 auto;
+    margin: 0 auto;
 }
+
 
 /* AngularJS to Angular section */
+
 .angularjs-angular-section ul {
     list-style-type: disc;
-    padding-left:3em;
+    padding-left: 3em;
 }
 
+
 /* Process section */
-.process-section ol{
-    padding-left:3em;
+
+.process-section ol {
+    padding-left: 3em;
 }
+
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
+
 /* custom colors */
+
 .bg-blue {
-    background:#6483c1;
+    background: #6483c1;
 }
 
 .color-blue {
-    color:#6483c1;
+    color: #6483c1;
 }
 
 .bg-gray {
-    background:#eee;
+    background: #eee;
 }
 
 .color-light {
-    color:white;
+    color: white;
 }
 
+
 /* spacing */
+
 .space-80 {
-    padding-top:80px;
+    padding-top: 80px;
 }
-.space-both.space-80{
-    padding-bottom:80px;
+
+.space-both.space-80 {
+    padding-bottom: 80px;
 }
 
 .space-medium {
-    padding-top:40px;
+    padding-top: 40px;
 }
 
 .space-medium.space-both {
-    padding-bottom:40px;
+    padding-bottom: 40px;
 }
 
+
 /* text */
+
 .font-thin {
     font-weight: 100 !important;
 }
@@ -311,12 +337,14 @@ a.button.is-primary {
     text-transform: uppercase;
 }
 
+
 /* borders */
 
 .no-borders {
-    border:0;
+    border: 0;
     border-radius: 0;
 }
+
 
 /*
  * Hide visually and from screen readers
@@ -325,6 +353,7 @@ a.button.is-primary {
 .hidden {
     display: none !important;
 }
+
 
 /*
  * Hide only visually, but have it available for screen readers:
@@ -342,6 +371,7 @@ a.button.is-primary {
     width: 1px;
 }
 
+
 /*
  * Extends the .visuallyhidden class to allow the element
  * to be focusable when navigated to via the keyboard:
@@ -358,6 +388,7 @@ a.button.is-primary {
     width: auto;
 }
 
+
 /*
  * Hide visually and from screen readers, but maintain layout
  */
@@ -365,6 +396,7 @@ a.button.is-primary {
 .invisible {
     visibility: hidden;
 }
+
 
 /*
  * Clearfix: contain floats
@@ -380,13 +412,16 @@ a.button.is-primary {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .clearfix:after {
     clear: both;
 }
+
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -399,11 +434,12 @@ a.button.is-primary {
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
+
 
 /* ==========================================================================
    Print styles.
@@ -418,66 +454,55 @@ a.button.is-primary {
     *:first-letter,
     *:first-line {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        color: #000 !important;
+        /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
     a,
     a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
     }
-
     pre,
     blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
-
     tr,
     img {
         page-break-inside: avoid;
     }
-
     img {
         max-width: 100% !important;
     }
-
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
-
     h2,
     h3 {
         page-break-after: avoid;
