@@ -1,10 +1,12 @@
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
+
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -15,6 +17,7 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -34,6 +37,7 @@ html {
     text-shadow: none;
 }
 
+
 /*
  * A better looking default horizontal rule
  */
@@ -46,6 +50,7 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
+
 
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -62,6 +67,7 @@ video {
     vertical-align: middle;
 }
 
+
 /*
  * Remove default fieldset styles.
  */
@@ -72,6 +78,7 @@ fieldset {
     padding: 0;
 }
 
+
 /*
  * Allow only vertical resizing of textareas.
  */
@@ -79,6 +86,7 @@ fieldset {
 textarea {
     resize: vertical;
 }
+
 
 /* ==========================================================================
    Browser Upgrade Prompt
@@ -91,17 +99,45 @@ textarea {
     padding: 0.2em 0;
 }
 
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
-body, button, input, select, textarea {
+
+/* Removed default margins */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0 !important;
+}
+
+body,
+button,
+input,
+select,
+textarea {
     font-size: 1.25rem;
-  font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Muli', 'Source Sans Pro', sans-serif;
+}
+
+@media only screen and (max-width:769px) {
+    body {
+        font-size: 1.1rem;
+    }
 }
 
 body {
-  color: black;
+    color: #5c6773;
+    background: url('../img/fill-background.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position-y: 300px;
 }
 
 header {
@@ -114,43 +150,51 @@ header {
     margin: 25px 0 0 -225px;
 }
 
-.title.is-3 { 
- font-weight: bold; }
-
+.title.is-3 {
+    font-weight: bold;
+}
 
 .ssubtitle {
     font-size: 1.5rem;
 }
+
 .header-logo {
     width: 12em;
     height: 12em;
 }
 
 .button.is-primary {
-  background-color: rgb(221, 3, 48);
+    background-color: #6483c1;
 }
 
-.button.is-primary:hover, .button.is-primary.is-hovered {
-  background-color: rgb(195,13, 46);
+.button.is-primary:hover,
+.button.is-primary.is-hovered {
+    background-color: #546fa3;
 }
-
 
 .custom-container {
-  margin: 100px auto;
-  position: relative;
-  max-width: 700px;
-  padding-bottom: 100px;
+    max-width: 700px;
 }
 
-
-@media screen and (max-width: 699px) {
-  .custom-container {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
+@media screen and (max-width: 724px) {
+    .custom-container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
 }
 
-#particles-js{
+.custom-container-big {
+    max-width: 1344px;
+}
+
+@media screen and (max-width: 1344px) {
+    .custom-container-big {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+#particles-js {
     position: relative;
     width: 100%;
     height: 380px;
@@ -166,7 +210,7 @@ header {
 }
 
 a {
-    color: black;
+    color: inherit;
     text-decoration: underline;
 }
 
@@ -174,7 +218,25 @@ a.button.is-primary {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width:769px) {
+    .title.is-1 {
+        font-size: 2em;
+    }
+    .ssubtitle {
+        font-size: 1.1em;
+    }
+    .title.is-2 {
+        font-size: 1.5em;
+    }
+    .title.is-3 {
+        font-size: 1.3em;
+    }
+    .title.is-4 {
+        font-size: 1.05em;
+    }
+}
+
+@media only screen and (max-width: 630px) {
     header {
         position: static;
         left: auto;
@@ -182,34 +244,289 @@ a.button.is-primary {
         height: auto;
         margin: 25px 0 0 0;
     }
-
     .header-logo {
         width: 8em;
         height: 8em;
     }
-
     .title.is-1 {
         font-size: 1.5em;
     }
-
     #particles-js {
         height: auto;
     }
-
     .ssubtitle {
-        font-size: 1.25em;
+        font-size: 1em;
         margin-left: 1em;
         margin-right: 1em;
     }
-
     .custom-container {
         margin: 0;
     }
 }
 
+
+/* Introduction section */
+
+#introduction {
+    background: url('../img/fill-top.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 30%;
+}
+
+.introduction-section .logo,
+.introduction-section .angular {
+    width: 100px;
+}
+
+.upgrade-button {
+    padding: 40px;
+    margin: 0;
+    border: 0;
+    width: 450px;
+    max-width: 100%;
+    background-color: #6483c1;
+    font-family: "brandon-grotesque", sans-serif;
+}
+
+.upgrade-button:hover {
+    background-color: #546fa3;
+}
+
+@media only screen and (max-width:769px) {
+    .upgrade-button {
+        padding: 20px;
+    }
+}
+
+
+/* Team section */
+
+.team-members {
+    padding-top: 40px;
+}
+
+.team-members .person {
+    padding: 10px;
+}
+
+.team-members .avatar {
+    width: 150px;
+    margin-right: 30px;
+}
+
+@media screen and (max-width: 769px) {
+    .team-members .avatar {
+        width: 95px;
+        margin-right: 10px;
+    }
+}
+
+.team-members .avatar img {
+    margin: 0 auto;
+}
+
+.team-members .person .name {
+    text-transform: uppercase;
+}
+
+
+/* AngularJS to Angular section */
+
+.angularjs-angular-section ul {
+    list-style-type: disc;
+    padding-left: 3em;
+}
+
+
+/* Process section */
+
+.process-section ol {
+    padding-left: 3em;
+}
+
+
+/* Who are we section */
+
+.developers-description {
+    padding-right: 80px;
+}
+
+.logo-wrapper-2 {
+    text-align: center;
+    display: none;
+}
+
+@media only screen and (max-width: 1260px) {
+    /* old bulma breakpoint */
+    .logo-wrapper-2 {
+        display: block;
+    }
+    .logo-wrapper-1 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    /* bulma tablet breakpoint */
+    .we-section .picture-wrapper,
+    .developers-description {
+        padding: 0 !important;
+    }
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
+
+/* custom colors */
+
+.bg-blue {
+    background: #6483c1;
+}
+
+.color-blue {
+    color: #6483c1;
+}
+
+.bg-gray {
+    background: rgba(100, 131, 193, 0.06);
+    /* #6483c1 */
+}
+
+.color-dark {
+    color: #000000;
+}
+
+.color-gray {
+    color: #5c6773;
+}
+
+.color-light {
+    color: white !important;
+}
+
+
+/* spacing */
+
+.space-big {
+    padding-top: 80px;
+}
+
+.space-big.space-both {
+    padding-bottom: 80px;
+}
+
+.space-medium {
+    padding-top: 40px;
+}
+
+.space-medium.space-both {
+    padding-bottom: 40px;
+}
+
+.space-small {
+    padding-top: 10px;
+}
+
+.h-full {
+    height: 100%;
+}
+
+@media only screen and (max-width: 1008px) {
+    /* bulma desktop breakpoint */
+    .space-big {
+        padding-top: 60px;
+    }
+    .space-big.space-both {
+        padding-bottom: 60px;
+    }
+    .space-medium {
+        padding-top: 30px;
+    }
+    .space-medium.space-both {
+        padding-bottom: 30px;
+    }
+}
+
+.no-space {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.mobile-only {
+    display: none;
+}
+
+@media only screen and (max-width:769px) {
+    .mobile-only {
+        display: initial;
+    }
+}
+
+
+/* text */
+
+.font-thin {
+    font-weight: 100 !important;
+}
+
+.font-medium {
+    font-weight: 500 !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.lt-big {
+    letter-spacing: 3px;
+}
+
+.lt-medium {
+    letter-spacing: 2.35px;
+}
+
+.lt-small {
+    letter-spacing: 0.35px;
+}
+
+@media only screen and (max-width:769px) {
+    .lt-big {
+        letter-spacing: 1.5px;
+    }
+}
+
+.font-small {
+    font-size: 1rem;
+}
+
+
+/* borders */
+
+.no-borders {
+    border: 0;
+    border-radius: 0;
+}
+
 
 /*
  * Hide visually and from screen readers
@@ -218,6 +535,7 @@ a.button.is-primary {
 .hidden {
     display: none !important;
 }
+
 
 /*
  * Hide only visually, but have it available for screen readers:
@@ -235,6 +553,7 @@ a.button.is-primary {
     width: 1px;
 }
 
+
 /*
  * Extends the .visuallyhidden class to allow the element
  * to be focusable when navigated to via the keyboard:
@@ -251,6 +570,7 @@ a.button.is-primary {
     width: auto;
 }
 
+
 /*
  * Hide visually and from screen readers, but maintain layout
  */
@@ -258,6 +578,7 @@ a.button.is-primary {
 .invisible {
     visibility: hidden;
 }
+
 
 /*
  * Clearfix: contain floats
@@ -273,13 +594,16 @@ a.button.is-primary {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .clearfix:after {
     clear: both;
 }
+
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -292,11 +616,12 @@ a.button.is-primary {
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
+
 
 /* ==========================================================================
    Print styles.
@@ -311,66 +636,55 @@ a.button.is-primary {
     *:first-letter,
     *:first-line {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        color: #000 !important;
+        /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
     a,
     a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
     }
-
     pre,
     blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
-
     tr,
     img {
         page-break-inside: avoid;
     }
-
     img {
         max-width: 100% !important;
     }
-
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
-
     h2,
     h3 {
         page-break-after: avoid;
