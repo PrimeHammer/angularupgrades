@@ -277,6 +277,7 @@ a.button.is-primary {
 .introduction-section .logo,
 .introduction-section .angular {
     width: 100px;
+    height: 100px;
 }
 
 .upgrade-button {
