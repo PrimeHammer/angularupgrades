@@ -45,9 +45,27 @@
     <link rel='icon' type='image/png' href='./img/favicons/favicon-16x16.png' sizes='16x16'>
     <link rel='icon' type='image/png' href='./img/favicons/favicon-128.png' sizes='128x128'>
 
+    <style type="text/css">
+        /* important css lines */
+
+        .introduction-section .logo,
+        .introduction-section .angular {
+            width: 100px;
+            height: 100px;
+        }
+
+    </style>
+
 </head>
 
 <body>
+    <noscript id="deferred-styles">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="css/build.min.css" type="text/css">
+    </noscript>
     <!--[if lt IE 10]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -218,7 +236,8 @@
                     </li>
                     <li class="space-small">
                         <p>Examination-Based Proposal </p>
-                        <p class="space-small">We propose an upgrade plan. Based on our app analysis, we suggest implementation steps for the upgrade.</p>
+                        <p class="space-small">We propose an upgrade plan. Based on our app analysis, we suggest implementation steps for the upgrade.
+                        </p>
                     </li>
                     <li class="space-small">
                         <p>Client's Decision </p>
@@ -276,11 +295,24 @@
 
     </div>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/build.min.css" type="text/css" media="all">
+    <!-- Lazyload css files -->
+    <script>
+        var loadDeferredStyles = function () {
+            var addStylesNode = document.getElementById("deferred-styles");
+            var replacement = document.createElement("div");
+            replacement.innerHTML = addStylesNode.textContent;
+            document.body.appendChild(replacement)
+            addStylesNode.parentElement.removeChild(addStylesNode);
+        };
+        var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+            webkitRequestAnimationFrame || msRequestAnimationFrame;
+        if (raf) raf(function () {
+            window.setTimeout(loadDeferredStyles, 0);
+        });
+        else window.addEventListener('load', loadDeferredStyles);
+
+    </script>
 
     <!-- script src="js/vendor/particles.min.js"></script -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>

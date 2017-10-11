@@ -11,14 +11,17 @@ const cssFiles = [
 ].map(name => path.join(__dirname, 'css', name));
 
 
-// minify css files
-new CleanCSS({
-    rebase: false
-}).minify(cssFiles, (error, data) => {
-    if (error) {
-        console.log('e', error);
-        return;
-    }
+const minifyFiles = (names, output) => new CleanCSS({
+        rebase: false,
+        returnPromise: true
+    }).minify(names)
+    .then(data => {
+        fs.writeFileSync(path.join(__dirname, 'css', output), data.styles);
+    });
 
-    fs.writeFileSync(path.join(__dirname, 'css', 'build.min.css'), data.styles);
-});
+
+Promise.all([
+    minifyFiles(cssFiles, 'build.min.css')
+]).catch(error => {
+    console.log('Error while minifying files', error);
+})
