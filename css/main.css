@@ -154,6 +154,11 @@ header {
     font-weight: bold;
 }
 
+.title,
+.ssubtitle {
+    font-family: 'brandon-grotesque', 'Muli', 'Source Sans Pro', sans-serif;
+}
+
 .ssubtitle {
     font-size: 1.5rem;
 }
@@ -329,6 +334,11 @@ a.button.is-primary {
 
 .team-members .person .name {
     text-transform: uppercase;
+}
+
+.person .title,
+.person .ssubtitle {
+    font-family: 'Muli', 'Source Sans Pro', sans-serif;
 }
 
 
