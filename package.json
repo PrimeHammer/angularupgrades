@@ -1,20 +1,22 @@
 {
-  "name": "angular-upgrade",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "doc": "doc"
-  },
-  "scripts": {
-    "start": "http-server --cors",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"node build.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "clean-css": "^4.1.9",
-    "http-server": "^0.10.0"
-  }
+    "name": "angular-upgrade",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "directories": {
+        "doc": "doc"
+    },
+    "scripts": {
+        "start": "http-server --cors",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "node build.js & npm run build:js",
+        "build:js": "uglifyjs js/main.js js/plugins.js js/typekit.js -o js/build.min.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "clean-css": "^4.1.9",
+        "http-server": "^0.10.0",
+        "uglify-js": "^3.1.3"
+    }
 }
