@@ -269,6 +269,10 @@ a.button.is-primary {
     }
 }
 
+.media-left {
+    margin-top: 0;
+}
+
 
 /* Introduction section */
 
