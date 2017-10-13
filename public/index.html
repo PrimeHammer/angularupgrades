@@ -45,15 +45,20 @@
     <link rel='icon' type='image/png' href='./img/favicons/favicon-16x16.png' sizes='16x16'>
     <link rel='icon' type='image/png' href='./img/favicons/favicon-128.png' sizes='128x128'>
 
-    <!-- Styles -->
+    <!-- CORE Styles -->
     <core-styles/>
-    <link rel="stylesheet" href="%PUBLIC_URL%/css/build.min.css" type="text/css" media="all">
 </head>
 
 <body>
     <!--[if lt IE 10]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+
+    <!-- Webbrowsers without js can not load styles asynchronously -->
+    <noscript>
+        <link rel="stylesheet" href="%PUBLIC_URL%/css/build.min.css" type="text/css" media="all">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" media="all">
+    </noscript>
 
     <!-- Introduction section -->
     <div id="introduction">
@@ -281,8 +286,11 @@
 
     </div>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <!-- Async loaded styles -->
+    <!-- Before changing, makre sure to use following styles in a <noscript> tag above, then set the media to "all". -->
+    <!-- Just to support browsers without js. -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/build.min.css" type="text/css" media="none" onload="this.media='all'">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" media="none" onload="this.media='all'">
 
     <!-- script src="js/vendor/particles.min.js"></script -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
