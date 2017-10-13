@@ -11,7 +11,7 @@ We use github pages and **everything in this repository is PUBLIC**.
 ## New public features
 
 Everything public (images, css, js, ...) should be located in the `public` folder. Custom JS should be located in the `public/js/main.js` file.
-(Soon we may move custom JS into the `src` folder)
+(Soon we may move custom JS into the `src` folder, just to get closer to a normal js project and then we can start using webpack)
 
 
 **Commit your changes alone**, then run `npm run build` and send **build files in a different commit** and write "[build]" into the commit message.
@@ -26,8 +26,8 @@ Custom build process, minifying and calculating the core css is done in the `scr
 
 Every other folder (from `scripts`, `public`, `src`, `node_modules`) is a build copy of the content located in `public` folder.
 
-Files like index.html in the main folder will be replaced at the build time. Please do not modify similar files as you may lost your worken
-after you run `npm run build`
+Files like index.html in the main folder will be replaced at the build time. Please do not modify similar files as you may lost your work
+after you run `npm run build`.
 
 ## Changing the build folder
 
