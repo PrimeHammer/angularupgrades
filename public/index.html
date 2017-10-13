@@ -17,11 +17,16 @@
     </script>
 
     <meta charset="utf-8">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Angular Upgrades. Made Easy</title>
     <meta name="description" content="Our professional team handles the entire migration process. From AngularJS to Angular, we got you covered.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#6483c1">
+
+    <!-- internet connection optimization -->
+    <link rel="preconnect" href="//use.typekit.net" crossorigin>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
 
     <!-- Social meta tags - Open Graph-->
     <meta property="og:title" content="Angular Upgrades. Made Easy" />
@@ -44,6 +49,20 @@
     <link rel='icon' type='image/png' href='./img/favicons/favicon-32x32.png' sizes='32x32'>
     <link rel='icon' type='image/png' href='./img/favicons/favicon-16x16.png' sizes='16x16'>
     <link rel='icon' type='image/png' href='./img/favicons/favicon-128.png' sizes='128x128'>
+
+    
+    <!-- Font face handling for an FOFT rendering approach -->
+    <style>
+        .font-not-loaded {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+        }
+    </style>
+    <script>
+        document.documentElement.classList.add('font-not-loaded');
+        var onFontLoaded = function () {
+            document.documentElement.classList.remove('font-not-loaded');
+        };
+    </script>
 
     <!-- CORE Styles -->
     <core-styles/>
@@ -289,12 +308,12 @@
     <!-- Async loaded styles -->
     <!-- Before changing, makre sure to use following styles in a <noscript> tag above, then set the media to "all". -->
     <!-- Just to support browsers without js. -->
-    <link rel="stylesheet" href="%PUBLIC_URL%/css/build.min.css" type="text/css" media="none" onload="this.media='all'">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" media="none" onload="this.media='all'">
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/build.min.css" type="text/css" media="none" onload="(this.media='all')">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" media="none" onload="(this.media='all') && onFontLoaded();">
 
     <!-- script src="js/vendor/particles.min.js"></script -->
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    <script src="./js/build.min.js"></script>
+    <script src="js/vendor/modernizr-2.8.3.min.js" async></script>
+    <script src="./js/build.min.js" async></script>
 </body>
 
 </html>
