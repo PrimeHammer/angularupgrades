@@ -34,7 +34,7 @@ const minifyFiles = (names, output) => cleanStyles(names)
         return data.styles;
     });
 
-const createCriticalCSS = (rawHTML, cssFilenames) => asyncUncss(html, {
+const createCriticalCSS = (rawHTML, cssFilenames) => asyncUncss(rawHTML, {
         stylesheets: cssFilenames
     }).then(cleanStyles)
     .then(data => data.styles);
