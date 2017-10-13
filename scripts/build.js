@@ -13,21 +13,13 @@ const cssFiles = [
 ].map(name => path.join(PUBLIC_DIR, 'css', name));
 
 
-const minifyFiles = (names, output) => new CleanCSS({
-        rebase: false,
-        returnPromise: true
-    }).minify(names)
-    .then(data => {
-        fs.writeFileSync(path.join(PUBLIC_DIR, 'css', output), data.styles);
-        return data.styles;
-    });
+const cleanStyles = css => new CleanCSS({
+    rebase: false,
+    returnPromise: true
+}).minify(css);
 
-const createCriticalCSS = (rawHTML, cssFilenames) => new Promise((resolve, reject) => {
-    const options = {
-        stylesheets: cssFilenames
-    };
-
-    uncss(rawHTML, options, function (error, output) {
+const asyncUncss = (html, options) => new Promise((resolve, reject) => {
+    return uncss(html, options, (error, output) => {
         if (error) {
             return reject(error);
         }
@@ -35,6 +27,18 @@ const createCriticalCSS = (rawHTML, cssFilenames) => new Promise((resolve, rejec
         return resolve(output);
     })
 });
+
+const minifyFiles = (names, output) => cleanStyles(names)
+    .then(data => {
+        fs.writeFileSync(path.join(PUBLIC_DIR, 'css', output), data.styles);
+        return data.styles;
+    });
+
+const createCriticalCSS = (rawHTML, cssFilenames) => asyncUncss(html, {
+        stylesheets: cssFilenames
+    }).then(cleanStyles)
+    .then(data => data.styles);
+
 
 minifyFiles(cssFiles, 'build.min.css')
     .then(styles => {
