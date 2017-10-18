@@ -9,8 +9,9 @@
     "scripts": {
         "start": "http-server --cors",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "npm run build:js & node scripts/build.js & react-scripts build & node scripts/postbuild.js",
-        "build:js": "uglifyjs public/js/main.js public/js/plugins.js public/js/typekit.js -o public/js/build.min.js"
+        "build": "npm run build:js & node custom_scripts/build.js & react-scripts build & node custom_scripts/postbuild.js",
+        "build:js": "uglifyjs public/js/main.js public/js/plugins.js public/js/typekit.js -o public/js/build.min.js",
+        "eject": "react-scripts eject"
     },
     "author": "",
     "license": "ISC",
