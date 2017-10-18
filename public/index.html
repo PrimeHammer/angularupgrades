@@ -67,6 +67,22 @@
 
     </script>
 
+    <!-- Image lazy load  -->
+    <script>
+        // if lazyloading a content, use <noscript class="lazy-load"><content> ...
+        var LAZY_LOAD_CLASS = 'lazy-load';
+        window.document.addEventListener('DOMContentLoaded', function () {
+            var els = Array.from(document.getElementsByClassName(LAZY_LOAD_CLASS));
+            els.forEach(function (el) {
+                var content = document.importNode((new DOMParser()).parseFromString(el.textContent,
+                    'text/html').body.firstChild, true);
+                // replace current parent with el's children
+                el.parentElement.replaceChild(content, el);
+            });
+        });
+
+    </script>
+
     <!-- CORE Styles -->
     <core-styles/>
 </head>
@@ -170,8 +186,9 @@
                     <article class="media">
                         <figure class="media-left">
                             <p class="image avatar">
-
-                                <img src="./img/team/matej-photo.jpg" alt="Matej">
+                                <noscript class="lazy-load">
+                                    <img src="./img/team/matej-photo.jpg" alt="Matej">
+                                </noscript>
                             </p>
                         </figure>
                         <div class="media-content">
@@ -194,7 +211,9 @@
                     <article class="media">
                         <figure class="media-left">
                             <p class="image avatar">
-                                <img src="./img/team/oliver-photo.jpg" alt="Oliver">
+                                <noscript class="lazy-load">
+                                    <img src="./img/team/oliver-photo.jpg" alt="Oliver">
+                                </noscript>
                             </p>
                         </figure>
                         <div class="media-content">
@@ -235,7 +254,9 @@
                 </p>
             </div>
             <div class="space-medium text-center">
-                <img src="./img/angularjs-to-angular.png" alt="angularjs to angular">
+                <noscript class="lazy-load">
+                    <img src="./img/angularjs-to-angular.png" alt="angularjs to angular">
+                </noscript>
             </div>
         </section>
     </div>
@@ -322,18 +343,24 @@
                             </p>
                         </div>
                         <div class="hero-foot space-small text-center logo-wrapper-1">
-                            <img src="./img/logo-2.png" alt="logo">
+                            <noscript class="lazy-load">
+                                <img src="./img/logo-2.png" alt="logo">
+                            </noscript>
                         </div>
                     </div>
                 </div>
                 <div class="column">
                     <div class="space-medium picture-wrapper text-center">
-                        <img src="./img/team/we.jpg" alt="our team">
+                        <noscript class="lazy-load">
+                            <img src="./img/team/we.jpg" alt="our team">
+                        </noscript>
                     </div>
                 </div>
             </div>
             <div class="space-medium logo-wrapper-2">
-                <img src="./img/logo-2.png" alt="logo">
+                <noscript class="lazy-load">
+                    <img src="./img/logo-2.png" alt="logo">
+                </noscript>
             </div>
         </section>
 
