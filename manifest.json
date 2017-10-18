@@ -1,10 +1,11 @@
 {
     "name": "angularupgrades.com",
-    "short_name": "angularupgrades",
+    "short_name": "upgrades",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#ffffff",
     "lang": "en",
+    "theme_color": "#6483c1",
     "description": "Our professional team handles the entire migration process. From AngularJS to Angular, we got you covered.",
     "icons": [{
         "src": "/img/favicons/favicon-16x16.png",
